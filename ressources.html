@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="fr" data-theme="kameamecha" class="font-sans">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ressources techniques — Kameamecha</title>
+  <meta name="description" content="Articles techniques sur la maintenance, l'optimisation, la formation et l'intégration de robots Universal Robots." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./dist/output.css" />
+</head>
+<body class="bg-base-100 text-base-content">
+
+  <header class="navbar bg-base-100 border-b border-base-300 px-6 lg:px-[120px] h-16 lg:h-[88px] sticky top-0 z-50">
+    <div class="navbar-start">
+      <a href="./index.html" class="flex items-center gap-3">
+        <span class="block w-6 h-6 lg:w-8 lg:h-8 bg-primary" aria-hidden="true"></span>
+        <span class="text-base lg:text-xl font-bold tracking-tight">KAMEAMECHA</span>
+      </a>
+    </div>
+    <nav class="navbar-center hidden lg:flex">
+      <ul class="flex items-center gap-8 text-base font-medium">
+        <li><a href="./index.html#services" class="pb-1 border-b-2 border-transparent text-km-gris-700 hover:text-base-content hover:border-primary">Nos services</a></li>
+        <li><a href="./a-propos.html" class="pb-1 border-b-2 border-transparent text-km-gris-700 hover:text-base-content hover:border-primary">Notre approche</a></li>
+        <li><a href="#" class="pb-1 border-b-2 border-transparent text-km-gris-700 hover:text-base-content hover:border-primary">Formation</a></li>
+        <li><a href="./ressources.html" class="pb-1 border-b-2 border-primary text-base-content">Ressources</a></li>
+        <li><a href="./contact.html" class="pb-1 border-b-2 border-transparent text-km-gris-700 hover:text-base-content hover:border-primary">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="navbar-end gap-2">
+      <a href="#" class="btn btn-outline border-base-content text-base-content hover:bg-base-content hover:text-base-100 hidden sm:inline-flex h-11 lg:h-12">Espace client</a>
+      <label for="mobile-menu" class="btn btn-square btn-outline border-base-content lg:hidden h-11 w-11" aria-label="Ouvrir le menu">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </label>
+    </div>
+  </header>
+
+  <input type="checkbox" id="mobile-menu" class="peer hidden" />
+  <div class="hidden peer-checked:flex lg:!hidden fixed inset-0 z-40 bg-base-100 flex-col pt-16">
+    <nav class="flex flex-col gap-1 p-5">
+      <a href="./index.html#services" class="py-3 text-lg font-medium border-b border-base-300 text-km-gris-700">Nos services</a>
+      <a href="./a-propos.html" class="py-3 text-lg font-medium border-b border-base-300 text-km-gris-700">Notre approche</a>
+      <a href="#" class="py-3 text-lg font-medium border-b border-base-300 text-km-gris-700">Formation</a>
+      <a href="./ressources.html" class="py-3 text-lg font-medium border-b border-base-300">Ressources</a>
+      <a href="./contact.html" class="py-3 text-lg font-medium border-b border-base-300 text-km-gris-700">Contact</a>
+      <a href="#" class="btn btn-outline border-base-content mt-5 h-12">Espace client</a>
+    </nav>
+  </div>
+
+  <main>
+
+    <nav aria-label="Fil d'ariane" class="border-b border-base-300 px-6 py-4 lg:px-[120px] lg:py-6 flex items-center gap-3 text-sm text-km-gris-700">
+      <a href="./index.html" class="km-link hover:text-base-content">Accueil</a>
+      <span class="text-km-gris-400" aria-hidden="true">/</span>
+      <span class="text-base-content font-semibold">Ressources techniques</span>
+    </nav>
+
+    <!-- ============ TITRE ============ -->
+    <section class="border-b border-base-300 px-6 pt-10 pb-8 lg:px-[120px] lg:pt-16 lg:pb-10 flex flex-col gap-4">
+      <h1 class="text-[32px] lg:text-[44px] font-semibold tracking-tight">Ressources techniques</h1>
+      <p class="text-base lg:text-lg text-km-gris-700 max-w-[60ch] text-pretty">Diagnostics, méthode et retours d'expérience sur la maintenance, l'optimisation, la formation et l'intégration de robots Universal Robots.</p>
+    </section>
+
+    <!-- ============ FILTRES ============ -->
+    <section class="border-b border-base-300 px-6 py-6 lg:px-[120px] flex flex-wrap gap-3" data-filter-bar>
+      <button type="button" class="px-4 py-2 text-sm font-semibold rounded border border-base-content bg-base-content text-base-100" data-filter="all">Tous</button>
+      <button type="button" class="px-4 py-2 text-sm font-medium rounded border border-base-300 text-km-gris-700 hover:border-base-content transition-colors" data-filter="maintenance">Maintenance</button>
+      <button type="button" class="px-4 py-2 text-sm font-medium rounded border border-base-300 text-km-gris-700 hover:border-base-content transition-colors" data-filter="optimisation">Optimisation</button>
+      <button type="button" class="px-4 py-2 text-sm font-medium rounded border border-base-300 text-km-gris-700 hover:border-base-content transition-colors" data-filter="formation">Formation</button>
+      <button type="button" class="px-4 py-2 text-sm font-medium rounded border border-base-300 text-km-gris-700 hover:border-base-content transition-colors" data-filter="integration">Intégration</button>
+    </section>
+
+    <!-- ============ GRILLE D'ARTICLES ============ -->
+    <section class="px-6 py-12 lg:px-[120px] lg:py-16">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-12" data-article-grid>
+
+        <article data-category="maintenance" class="flex flex-col gap-4">
+          <a href="./article-defaut-articulation-ur10e.html" class="km-link">
+            <div class="placeholder-img h-[196px] flex items-end p-4">
+              <span class="text-xs font-medium text-km-gris-700">Vignette 16:9 — articulation de poignet d'un UR10e</span>
+            </div>
+          </a>
+          <span class="text-xs font-semibold tracking-[0.08em] uppercase text-secondary">Maintenance · 12 mars 2026</span>
+          <h2 class="text-xl font-semibold leading-snug"><a href="./article-defaut-articulation-ur10e.html" class="km-link">Défaut d'articulation sur UR10e : les symptômes à connaître</a></h2>
+          <p class="text-base text-km-gris-700 text-pretty">Bruit, dérive de position, arrêt en cours de cycle : les signes qui pointent une articulation, et ceux qui viennent d'ailleurs.</p>
+        </article>
+
+        <article data-category="maintenance" class="flex flex-col gap-4">
+          <div class="placeholder-img h-[196px] flex items-end p-4">
+            <span class="text-xs font-medium text-km-gris-700">Vignette 16:9 — cellule robotisée à l'arrêt, technicien et opérateur</span>
+          </div>
+          <span class="text-xs font-semibold tracking-[0.08em] uppercase text-secondary">Maintenance · 28 février 2026</span>
+          <h2 class="text-xl font-semibold leading-snug">Ce que couvre un plan de maintenance préventive</h2>
+          <p class="text-base text-km-gris-700 text-pretty">Ce qu'un contrat prend en charge, à quelle fréquence, et ce qui reste à la charge de l'exploitant.</p>
+        </article>
+
+        <article data-category="integration" class="flex flex-col gap-4">
+          <div class="placeholder-img h-[196px] flex items-end p-4">
+            <span class="text-xs font-medium text-km-gris-700">Vignette 16:9 — poste de travail où le robot est contourné par l'opérateur</span>
+          </div>
+          <span class="text-xs font-semibold tracking-[0.08em] uppercase text-secondary">Intégration · 4 février 2026</span>
+          <h2 class="text-xl font-semibold leading-snug">Les signes d'une intégration à reprendre</h2>
+          <p class="text-base text-km-gris-700 text-pretty">Cadence en dessous du prévu, arrêts répétés, opérateurs qui contournent le robot : quand poser la question.</p>
+        </article>
+
+        <article data-category="optimisation" class="flex flex-col gap-4">
+          <div class="placeholder-img h-[196px] flex items-end p-4">
+            <span class="text-xs font-medium text-km-gris-700">Vignette 16:9 — pupitre UR affichant un journal d'erreurs</span>
+          </div>
+          <span class="text-xs font-semibold tracking-[0.08em] uppercase text-secondary">Optimisation · 18 janvier 2026</span>
+          <h2 class="text-xl font-semibold leading-snug">Reprise de programme : quand la faute revient au code, pas au robot</h2>
+          <p class="text-base text-km-gris-700 text-pretty">Un robot qui ralentit n'a pas toujours un problème mécanique. Ce qu'il faut vérifier avant de suspecter le matériel.</p>
+        </article>
+
+        <article data-category="formation" class="flex flex-col gap-4">
+          <div class="placeholder-img h-[196px] flex items-end p-4">
+            <span class="text-xs font-medium text-km-gris-700">Vignette 16:9 — opérateur au pupitre UR en session de formation</span>
+          </div>
+          <span class="text-xs font-semibold tracking-[0.08em] uppercase text-secondary">Formation · 22 décembre 2025</span>
+          <h2 class="text-xl font-semibold leading-snug">Ce qui change après une formation de prise en main</h2>
+          <p class="text-base text-km-gris-700 text-pretty">Moins d'appels pour des gestes simples, des opérateurs qui identifient plus tôt ce qui relève d'une vraie panne.</p>
+        </article>
+
+        <article data-category="integration" class="flex flex-col gap-4">
+          <div class="placeholder-img h-[196px] flex items-end p-4">
+            <span class="text-xs font-medium text-km-gris-700">Vignette 16:9 — poste d'assemblage avant automatisation</span>
+          </div>
+          <span class="text-xs font-semibold tracking-[0.08em] uppercase text-secondary">Intégration · 10 décembre 2025</span>
+          <h2 class="text-xl font-semibold leading-snug">Étude de faisabilité : les questions à se poser avant d'automatiser un poste</h2>
+          <p class="text-base text-km-gris-700 text-pretty">Volume, variabilité des pièces, accès au poste : ce qui détermine si un cobot répond vraiment au besoin.</p>
+        </article>
+
+      </div>
+      <p class="hidden text-center text-km-gris-700 py-12" data-empty-state>Aucun article dans cette catégorie pour l'instant.</p>
+    </section>
+
+  </main>
+
+  <footer class="bg-neutral text-neutral-content px-6 py-10 lg:px-[120px] lg:pt-16 lg:pb-12 flex flex-col gap-12 border-t border-km-gris-700">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+      <div class="flex flex-col gap-4">
+        <div class="flex items-center gap-3">
+          <span class="w-6 h-6 bg-primary"></span>
+          <span class="text-base font-bold tracking-tight">KAMEAMECHA</span>
+        </div>
+        <p class="text-sm text-base-300 text-pretty">Service et intégration sur robots Universal Robots, partout en France.</p>
+      </div>
+      <div class="flex flex-col gap-4">
+        <span class="text-xs font-semibold tracking-[0.12em] uppercase text-km-gris-400">Coordonnées</span>
+        <ul class="flex flex-col gap-2 text-sm text-neutral-content">
+          <li>Adresse du siège — à fournir</li>
+          <li>Téléphone — à fournir</li>
+          <li>contact@kameamecha.fr</li>
+          <li>Du lundi au vendredi, 8 h – 18 h</li>
+        </ul>
+      </div>
+      <div class="flex flex-col gap-4">
+        <span class="text-xs font-semibold tracking-[0.12em] uppercase text-km-gris-400">Plan du site</span>
+        <ul class="flex flex-col gap-2 text-sm text-neutral-content">
+          <li><a href="./index.html#services" class="km-link">Nos services</a></li>
+          <li><a href="./a-propos.html" class="km-link">Notre approche</a></li>
+          <li>Formation</li>
+          <li><a href="./ressources.html" class="km-link">Ressources techniques</a></li>
+          <li>Espace client</li>
+        </ul>
+      </div>
+      <div class="flex flex-col gap-4">
+        <span class="text-xs font-semibold tracking-[0.12em] uppercase text-km-gris-400">Informations légales</span>
+        <ul class="flex flex-col gap-2 text-sm text-neutral-content">
+          <li><a href="./mentions-legales.html" class="km-link">Mentions légales</a></li>
+          <li><a href="./politique-confidentialite.html" class="km-link">Politique de confidentialité</a></li>
+          <li><a href="./gestion-cookies.html" class="km-link">Gestion des cookies</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-km-gris-700 pt-6 text-xs text-km-gris-400">© 2026 Kameamecha</div>
+  </footer>
+
+  <script src="./js/resource-filters.js"></script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="fr" data-theme="kameamecha" class="font-sans">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gestion des cookies — Kameamecha</title>
+  <meta name="description" content="Politique d'utilisation des cookies du site Kameamecha." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./dist/output.css" />
+</head>
+<body class="bg-base-100 text-base-content">
+
+  <header class="navbar bg-base-100 border-b border-base-300 px-6 lg:px-[120px] h-16 lg:h-[88px] sticky top-0 z-50">
+    <div class="navbar-start">
+      <a href="./index.html" class="flex items-center gap-3">
+        <span class="block w-6 h-6 lg:w-8 lg:h-8 bg-primary" aria-hidden="true"></span>
+        <span class="text-base lg:text-xl font-bold tracking-tight">KAMEAMECHA</span>
+      </a>
+    </div>
+    <nav class="navbar-center hidden lg:flex">
+      <ul class="flex items-center gap-8 text-base font-medium">
+        <li><a href="./index.html#services" class="pb-1 border-b-2 border-transparent text-km-gris-700 hover:text-base-content hover:border-primary">Nos services</a></li>
+        <li><a href="./a-propos.html" class="pb-1 border-b-2 border-transparent text-km-gris-700 hover:text-base-content hover:border-primary">Notre approche</a></li>
+        <li><a href="#" class="pb-1 border-b-2 border-transparent text-km-gris-700 hover:text-base-content hover:border-primary">Formation</a></li>
+        <li><a href="./ressources.html" class="pb-1 border-b-2 border-transparent text-km-gris-700 hover:text-base-content hover:border-primary">Ressources</a></li>
+        <li><a href="./contact.html" class="pb-1 border-b-2 border-transparent text-km-gris-700 hover:text-base-content hover:border-primary">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="navbar-end gap-2">
+      <a href="#" class="btn btn-outline border-base-content text-base-content hover:bg-base-content hover:text-base-100 hidden sm:inline-flex h-11 lg:h-12">Espace client</a>
+      <label for="mobile-menu" class="btn btn-square btn-outline border-base-content lg:hidden h-11 w-11" aria-label="Ouvrir le menu">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </label>
+    </div>
+  </header>
+
+  <input type="checkbox" id="mobile-menu" class="peer hidden" />
+  <div class="hidden peer-checked:flex lg:!hidden fixed inset-0 z-40 bg-base-100 flex-col pt-16">
+    <nav class="flex flex-col gap-1 p-5">
+      <a href="./index.html#services" class="py-3 text-lg font-medium border-b border-base-300 text-km-gris-700">Nos services</a>
+      <a href="./a-propos.html" class="py-3 text-lg font-medium border-b border-base-300 text-km-gris-700">Notre approche</a>
+      <a href="#" class="py-3 text-lg font-medium border-b border-base-300 text-km-gris-700">Formation</a>
+      <a href="./ressources.html" class="py-3 text-lg font-medium border-b border-base-300 text-km-gris-700">Ressources</a>
+      <a href="./contact.html" class="py-3 text-lg font-medium border-b border-base-300 text-km-gris-700">Contact</a>
+      <a href="#" class="btn btn-outline border-base-content mt-5 h-12">Espace client</a>
+    </nav>
+  </div>
+
+  <main>
+
+    <nav aria-label="Fil d'ariane" class="border-b border-base-300 px-6 py-4 lg:px-[120px] lg:py-6 flex items-center gap-3 text-sm text-km-gris-700">
+      <a href="./index.html" class="km-link hover:text-base-content">Accueil</a>
+      <span class="text-km-gris-400" aria-hidden="true">/</span>
+      <span class="text-base-content font-semibold">Gestion des cookies</span>
+    </nav>
+
+    <section class="px-6 py-10 lg:px-[120px] lg:py-16">
+      <div class="max-w-[70ch] flex flex-col gap-10">
+        <h1 class="text-[28px] lg:text-[40px] font-semibold tracking-tight">Gestion des cookies</h1>
+
+        <div class="flex flex-col gap-3">
+          <h2 class="text-xl font-semibold">Qu'est-ce qu'un cookie</h2>
+          <p class="text-base text-km-gris-700 leading-relaxed">Un cookie est un petit fichier déposé sur votre appareil lors de la consultation d'un site, qui permet de conserver certaines informations d'une visite à l'autre.</p>
+        </div>
+
+        <div class="flex flex-col gap-3">
+          <h2 class="text-xl font-semibold">Cookies utilisés sur ce site</h2>
+          <p class="text-base text-km-gris-700 leading-relaxed">Ce site utilise uniquement des cookies strictement nécessaires à son fonctionnement (par exemple, la mémorisation de votre choix concernant les cookies). Aucun cookie de mesure d'audience ou publicitaire n'est déposé sans votre consentement préalable.</p>
+          <p class="border border-dashed border-km-gris-400 rounded p-4 text-sm text-km-gris-700">À compléter : liste exacte des cookies déposés (nom, finalité, durée de conservation) une fois les outils de mesure d'audience éventuels choisis.</p>
+        </div>
+
+        <div class="flex flex-col gap-3">
+          <h2 class="text-xl font-semibold">Gérer vos préférences</h2>
+          <p class="text-base text-km-gris-700 leading-relaxed">Vous pouvez à tout moment configurer votre navigateur pour refuser les cookies ou être averti avant leur dépôt. Le refus des cookies non essentiels n'empêche pas la consultation du site.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="bg-neutral text-neutral-content px-6 py-10 lg:px-[120px] lg:pt-16 lg:pb-12 flex flex-col gap-12 border-t border-km-gris-700">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+      <div class="flex flex-col gap-4">
+        <div class="flex items-center gap-3">
+          <span class="w-6 h-6 bg-primary"></span>
+          <span class="text-base font-bold tracking-tight">KAMEAMECHA</span>
+        </div>
+        <p class="text-sm text-base-300 text-pretty">Service et intégration sur robots Universal Robots, partout en France.</p>
+      </div>
+      <div class="flex flex-col gap-4">
+        <span class="text-xs font-semibold tracking-[0.12em] uppercase text-km-gris-400">Coordonnées</span>
+        <ul class="flex flex-col gap-2 text-sm text-neutral-content">
+          <li>Adresse du siège — à fournir</li>
+          <li>Téléphone — à fournir</li>
+          <li>contact@kameamecha.fr</li>
+          <li>Du lundi au vendredi, 8 h – 18 h</li>
+        </ul>
+      </div>
+      <div class="flex flex-col gap-4">
+        <span class="text-xs font-semibold tracking-[0.12em] uppercase text-km-gris-400">Plan du site</span>
+        <ul class="flex flex-col gap-2 text-sm text-neutral-content">
+          <li><a href="./index.html#services" class="km-link">Nos services</a></li>
+          <li><a href="./a-propos.html" class="km-link">Notre approche</a></li>
+          <li>Formation</li>
+          <li><a href="./ressources.html" class="km-link">Ressources techniques</a></li>
+          <li>Espace client</li>
+        </ul>
+      </div>
+      <div class="flex flex-col gap-4">
+        <span class="text-xs font-semibold tracking-[0.12em] uppercase text-km-gris-400">Informations légales</span>
+        <ul class="flex flex-col gap-2 text-sm text-neutral-content">
+          <li><a href="./mentions-legales.html" class="km-link">Mentions légales</a></li>
+          <li><a href="./politique-confidentialite.html" class="km-link">Politique de confidentialité</a></li>
+          <li><a href="./gestion-cookies.html" class="km-link">Gestion des cookies</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-km-gris-700 pt-6 text-xs text-km-gris-400">© 2026 Kameamecha</div>
+  </footer>
+
+</body>
+</html>
