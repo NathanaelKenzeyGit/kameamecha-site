@@ -68,12 +68,20 @@
     font-feature-settings: "tnum" 1;
   }
 
-  a:not(.btn) {
+  /* Same hover language everywhere a plain text link appears: a 2px
+     underline in the brand violet, reserved (transparent) at rest so
+     nothing shifts on hover — the exact treatment the primary nav uses
+     for its active item, applied consistently to every other text link
+     (breadcrumbs, footer, card links). Buttons and the bordered
+     "pôle" link-cards keep their own hover treatment instead. */
+  a.km-link {
     text-decoration: none;
+    padding-bottom: 3px;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.15s ease;
   }
-  a:not(.btn):hover {
-    text-decoration: underline;
-    text-underline-offset: 3px;
+  a.km-link:hover {
+    border-bottom-color: var(--color-primary);
   }
 }
 
