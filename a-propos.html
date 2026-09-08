@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="fr" data-theme="kameamecha" class="font-sans">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>À propos — Kameamecha</title>
+  <meta name="description" content="Kameamecha, le seul acteur français exclusivement spécialisé sur le service des robots Universal Robots. Notre histoire, nos valeurs." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./dist/output.css" />
+</head>
+<body class="bg-base-100 text-base-content">
+
+  <header class="navbar bg-base-100 border-b border-base-300 px-6 lg:px-[120px] h-16 lg:h-[88px] sticky top-0 z-50">
+    <div class="navbar-start">
+      <a href="./index.html" class="flex items-center gap-3">
+        <span class="block w-6 h-6 lg:w-8 lg:h-8 bg-primary" aria-hidden="true"></span>
+        <span class="text-base lg:text-xl font-bold tracking-tight">KAMEAMECHA</span>
+      </a>
+    </div>
+    <nav class="navbar-center hidden lg:flex">
+      <ul class="flex items-center gap-8 text-base font-medium">
+        <li><a href="./index.html#services" class="pb-1 border-b-2 border-transparent text-km-gris-700 hover:text-base-content hover:border-primary">Nos services</a></li>
+        <li><a href="./a-propos.html" class="pb-1 border-b-2 border-primary text-base-content">Notre approche</a></li>
+        <li><a href="#" class="pb-1 border-b-2 border-transparent text-km-gris-700 hover:text-base-content hover:border-primary">Formation</a></li>
+        <li><a href="#" class="pb-1 border-b-2 border-transparent text-km-gris-700 hover:text-base-content hover:border-primary">Ressources</a></li>
+        <li><a href="./index.html#contact" class="pb-1 border-b-2 border-transparent text-km-gris-700 hover:text-base-content hover:border-primary">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="navbar-end gap-2">
+      <a href="#" class="btn btn-outline border-base-content text-base-content hover:bg-base-content hover:text-base-100 hidden sm:inline-flex h-11 lg:h-12">Espace client</a>
+      <label for="mobile-menu" class="btn btn-square btn-outline border-base-content lg:hidden h-11 w-11" aria-label="Ouvrir le menu">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </label>
+    </div>
+  </header>
+
+  <input type="checkbox" id="mobile-menu" class="peer hidden" />
+  <div class="hidden peer-checked:flex lg:!hidden fixed inset-0 z-40 bg-base-100 flex-col pt-16">
+    <nav class="flex flex-col gap-1 p-5">
+      <a href="./index.html#services" class="py-3 text-lg font-medium border-b border-base-300 text-km-gris-700">Nos services</a>
+      <a href="./a-propos.html" class="py-3 text-lg font-medium border-b border-base-300">Notre approche</a>
+      <a href="#" class="py-3 text-lg font-medium border-b border-base-300 text-km-gris-700">Formation</a>
+      <a href="#" class="py-3 text-lg font-medium border-b border-base-300 text-km-gris-700">Ressources</a>
+      <a href="./index.html#contact" class="py-3 text-lg font-medium border-b border-base-300 text-km-gris-700">Contact</a>
+      <a href="#" class="btn btn-outline border-base-content mt-5 h-12">Espace client</a>
+    </nav>
+  </div>
+
+  <main>
+
+    <nav aria-label="Fil d'ariane" class="border-b border-base-300 px-6 py-4 lg:px-[120px] lg:py-6 flex items-center gap-3 text-sm text-km-gris-700">
+      <a href="./index.html" class="km-link hover:text-base-content">Accueil</a>
+      <span class="text-km-gris-400" aria-hidden="true">/</span>
+      <span class="text-base-content font-semibold">À propos</span>
+    </nav>
+
+    <!-- ============ HERO ============ -->
+    <section class="border-b border-base-300 px-6 py-10 lg:px-[120px] lg:py-20">
+      <div class="lg:grid lg:grid-cols-12 lg:gap-6 lg:items-center">
+        <div class="lg:col-span-6 flex flex-col gap-6 lg:gap-8">
+          <span class="text-xs font-semibold tracking-[0.12em] uppercase text-secondary">À propos</span>
+          <h1 class="text-[32px] leading-[1.1] lg:text-[48px] font-semibold tracking-tight lg:leading-[1.1] text-balance">Le seul acteur français exclusivement spécialisé sur le service des robots Universal Robots</h1>
+          <p class="text-base lg:text-lg leading-relaxed text-km-gris-700 max-w-[52ch] text-pretty">
+            Les autres intervenants du marché sont soit des intégrateurs généralistes, soit le constructeur lui-même. Nous avons choisi de nous concentrer sur une seule chose : la maintenance, l'optimisation, l'intégration et la formation sur robots UR.
+          </p>
+        </div>
+        <div class="lg:col-span-6 mt-8 lg:mt-0">
+          <div class="placeholder-img h-[248px] lg:h-[400px] flex items-end p-4 lg:p-6">
+            <span class="text-xs font-medium text-km-gris-700 leading-relaxed">Image 4:3 — atelier Kameamecha, poste de travail avec bras UR</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ NOTRE HISTOIRE ============ -->
+    <section class="border-b border-base-300 px-6 py-12 lg:px-[120px] lg:py-20 flex flex-col gap-6">
+      <h2 class="text-2xl lg:text-[36px] font-semibold tracking-tight">Notre histoire</h2>
+      <div class="flex flex-col gap-5 max-w-[68ch] text-base lg:text-lg leading-relaxed text-km-gris-700 text-pretty">
+        <p>Kameamecha a été fondée par un ancien ingénieur d'application et formateur certifié chez Universal Robots. Après plusieurs années à former des intégrateurs et à dépanner des cellules sur le terrain, le même constat revenait : les clients avaient besoin d'un interlocuteur qui connaisse leurs robots aussi bien que le constructeur, sans les contraintes commerciales d'un réseau de distribution.</p>
+        <p>Kameamecha répond à ce besoin depuis sa création. La même équipe technique suit chaque dossier du diagnostic initial au rapport d'intervention — pas de sous-traitance, pas d'intermédiaire entre vous et la personne qui intervient sur votre robot.</p>
+      </div>
+    </section>
+
+    <!-- ============ NOS VALEURS ============ -->
+    <section class="border-b border-base-300 bg-base-200 px-6 py-12 lg:px-[120px] lg:py-20 flex flex-col gap-10 lg:gap-12">
+      <h2 class="text-2xl lg:text-[36px] font-semibold tracking-tight">Nos valeurs</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 lg:gap-10">
+        <div class="flex flex-col gap-4">
+          <div class="w-10 h-10 flex items-center justify-center bg-km-violet-050 border border-primary text-primary">
+            <svg viewBox="0 0 256 256" fill="currentColor" class="w-5 h-5" aria-hidden="true"><path d="M226.76,69a8,8,0,0,0-12.84-2.88l-40.3,37.19-17.23-3.7-3.7-17.23,37.19-40.3A8,8,0,0,0,187,29.24,72,72,0,0,0,88,96,72.34,72.34,0,0,0,94,124.94L33.79,177c-.15.12-.29.26-.43.39a32,32,0,0,0,45.26,45.26c.13-.13.27-.28.39-.42L131.06,162A72,72,0,0,0,232,96,71.56,71.56,0,0,0,226.76,69ZM160,152a56.14,56.14,0,0,1-27.07-7,8,8,0,0,0-9.92,1.77L67.11,211.51a16,16,0,0,1-22.62-22.62L109.18,133a8,8,0,0,0,1.77-9.93,56,56,0,0,1,58.36-82.31l-31.2,33.81a8,8,0,0,0-1.94,7.1L141.83,108a8,8,0,0,0,6.14,6.14l26.35,5.66a8,8,0,0,0,7.1-1.94l33.81-31.2A56.06,56.06,0,0,1,160,152Z"/></svg>
+          </div>
+          <h3 class="text-xl font-semibold">Exactitude technique</h3>
+          <p class="text-base text-km-gris-700 text-pretty">Un diagnostic qui repose sur ce qui est mesuré, pas sur ce qui est probable. Nous ne remplaçons pas une pièce par précaution.</p>
+        </div>
+        <div class="flex flex-col gap-4">
+          <div class="w-10 h-10 flex items-center justify-center bg-km-violet-050 border border-primary text-primary">
+            <svg viewBox="0 0 256 256" fill="currentColor" class="w-5 h-5" aria-hidden="true"><path d="M247.31,124.76c-.35-.79-8.82-19.58-27.65-38.41C194.57,61.26,162.88,48,128,48S61.43,61.26,36.34,86.35C17.51,105.18,9,124,8.69,124.76a8,8,0,0,0,0,6.5c.35.79,8.82,19.57,27.65,38.4C61.43,194.74,93.12,208,128,208s66.57-13.26,91.66-38.34c18.83-18.83,27.3-37.61,27.65-38.4A8,8,0,0,0,247.31,124.76ZM128,192c-30.78,0-57.67-11.19-79.93-33.25A133.47,133.47,0,0,1,25,128,133.33,133.33,0,0,1,48.07,97.25C70.33,75.19,97.22,64,128,64s57.67,11.19,79.93,33.25A133.46,133.46,0,0,1,231.05,128C223.84,141.46,192.43,192,128,192Zm0-112a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160Z"/></svg>
+          </div>
+          <h3 class="text-xl font-semibold">Transparence</h3>
+          <p class="text-base text-km-gris-700 text-pretty">Un rapport détaillé après chaque intervention : ce qui a été constaté, ce qui a été fait, ce qui reste à surveiller.</p>
+        </div>
+        <div class="flex flex-col gap-4">
+          <div class="w-10 h-10 flex items-center justify-center bg-km-violet-050 border border-primary text-primary">
+            <svg viewBox="0 0 256 256" fill="currentColor" class="w-5 h-5" aria-hidden="true"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,192a88,88,0,1,1,88-88A88.1,88.1,0,0,1,128,216Zm64-88a8,8,0,0,1-8,8H128a8,8,0,0,1-8-8V72a8,8,0,0,1,16,0v48h48A8,8,0,0,1,192,128Z"/></svg>
+          </div>
+          <h3 class="text-xl font-semibold">Réactivité</h3>
+          <p class="text-base text-km-gris-700 text-pretty">Un technicien qui rappelle le jour même, et un délai d'intervention fixé au contrat plutôt qu'annoncé au cas par cas.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ BLOC CONVERSION ============ -->
+    <section class="bg-neutral text-neutral-content px-6 py-12 lg:px-[120px] lg:py-20">
+      <div class="lg:grid lg:grid-cols-12 lg:gap-6 lg:items-center">
+        <div class="lg:col-span-7 flex flex-col gap-4">
+          <h2 class="text-2xl lg:text-[36px] font-semibold tracking-tight leading-tight text-balance">Une question sur notre méthode ou nos contrats ?</h2>
+          <p class="text-base lg:text-lg text-base-300 max-w-[52ch] text-pretty">Décrivez votre besoin, un technicien vous rappelle dans la journée ouvrée.</p>
+        </div>
+        <div class="lg:col-span-5 flex flex-col sm:flex-row lg:justify-end gap-4 mt-8 lg:mt-0">
+          <a href="./index.html#contact" class="btn btn-primary h-13 lg:h-14 px-6 lg:px-8 text-base font-semibold">Demander un diagnostic</a>
+          <a href="./index.html#contact" class="btn btn-outline border-neutral-content text-neutral-content hover:bg-neutral-content hover:text-neutral h-13 lg:h-14 px-6 lg:px-8 text-base font-semibold">Nous contacter</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="bg-neutral text-neutral-content px-6 py-10 lg:px-[120px] lg:pt-16 lg:pb-12 flex flex-col gap-12 border-t border-km-gris-700">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+      <div class="flex flex-col gap-4">
+        <div class="flex items-center gap-3">
+          <span class="w-6 h-6 bg-primary"></span>
+          <span class="text-base font-bold tracking-tight">KAMEAMECHA</span>
+        </div>
+        <p class="text-sm text-base-300 text-pretty">Service et intégration sur robots Universal Robots, partout en France.</p>
+      </div>
+      <div class="flex flex-col gap-4">
+        <span class="text-xs font-semibold tracking-[0.12em] uppercase text-km-gris-400">Coordonnées</span>
+        <ul class="flex flex-col gap-2 text-sm text-neutral-content">
+          <li>Adresse du siège — à fournir</li>
+          <li>Téléphone — à fournir</li>
+          <li>contact@kameamecha.fr</li>
+          <li>Du lundi au vendredi, 8 h – 18 h</li>
+        </ul>
+      </div>
+      <div class="flex flex-col gap-4">
+        <span class="text-xs font-semibold tracking-[0.12em] uppercase text-km-gris-400">Plan du site</span>
+        <ul class="flex flex-col gap-2 text-sm text-neutral-content">
+          <li><a href="./index.html#services" class="km-link">Nos services</a></li>
+          <li><a href="./a-propos.html" class="km-link">Notre approche</a></li>
+          <li>Formation</li>
+          <li>Ressources techniques</li>
+          <li>Espace client</li>
+        </ul>
+      </div>
+      <div class="flex flex-col gap-4">
+        <span class="text-xs font-semibold tracking-[0.12em] uppercase text-km-gris-400">Informations légales</span>
+        <ul class="flex flex-col gap-2 text-sm text-neutral-content">
+          <li>Mentions légales</li>
+          <li>Politique de confidentialité</li>
+          <li>Gestion des cookies</li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-km-gris-700 pt-6 text-xs text-km-gris-400">© 2026 Kameamecha</div>
+  </footer>
+
+</body>
+</html>
