@@ -14,7 +14,7 @@
 
   <header class="navbar bg-base-100 border-b border-base-300 px-6 lg:px-[120px] h-16 lg:h-[88px] sticky top-0 z-50">
     <div class="navbar-start">
-      <a href="./index.html" class="flex items-center gap-3">
+      <a href="./index.html" class="flex items-center gap-3 hover:no-underline">
         <span class="block w-6 h-6 lg:w-8 lg:h-8 bg-primary" aria-hidden="true"></span>
         <span class="text-base lg:text-xl font-bold tracking-tight">KAMEAMECHA</span>
       </a>
@@ -117,24 +117,24 @@
         <h2 class="text-2xl lg:text-[36px] font-semibold tracking-tight">Comment se déroule une optimisation</h2>
         <p class="text-base lg:text-lg text-km-gris-700 text-pretty">Quatre étapes, du symptôme observé à la vérification en production.</p>
       </div>
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-        <div class="flex flex-col gap-4 pt-6 border-t-2 border-primary">
-          <span class="text-sm font-bold tracking-[0.08em] text-secondary">01</span>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8" data-method-track>
+        <div class="flex flex-col gap-4 pt-6 border-t-2 border-primary transition-colors duration-500" data-step-item>
+          <span class="text-sm font-bold tracking-[0.08em] text-secondary transition-colors duration-500" data-step-number>01</span>
           <h3 class="text-lg lg:text-xl font-semibold leading-snug">Vous décrivez le symptôme</h3>
           <p class="text-sm lg:text-base text-km-gris-700 text-pretty">Cadence en retrait, à-coups, arrêts répétés sans code d'erreur clair : décrivez ce que vous observez.</p>
         </div>
-        <div class="flex flex-col gap-4 pt-6 border-t-2 border-base-300">
-          <span class="text-sm font-bold tracking-[0.08em] text-km-gris-700">02</span>
+        <div class="flex flex-col gap-4 pt-6 border-t-2 border-base-300 transition-colors duration-500" data-step-item>
+          <span class="text-sm font-bold tracking-[0.08em] text-km-gris-700 transition-colors duration-500" data-step-number>02</span>
           <h3 class="text-lg lg:text-xl font-semibold leading-snug">Analyse à distance ou sur site</h3>
           <p class="text-sm lg:text-base text-km-gris-700 text-pretty">Selon le cas, un technicien se connecte au pupitre ou se déplace pour observer le cycle en conditions réelles.</p>
         </div>
-        <div class="flex flex-col gap-4 pt-6 border-t-2 border-base-300">
-          <span class="text-sm font-bold tracking-[0.08em] text-km-gris-700">03</span>
+        <div class="flex flex-col gap-4 pt-6 border-t-2 border-base-300 transition-colors duration-500" data-step-item>
+          <span class="text-sm font-bold tracking-[0.08em] text-km-gris-700 transition-colors duration-500" data-step-number>03</span>
           <h3 class="text-lg lg:text-xl font-semibold leading-snug">Réglages proposés</h3>
           <p class="text-sm lg:text-base text-km-gris-700 text-pretty">Les ajustements possibles vous sont présentés avant application, avec leur effet attendu.</p>
         </div>
-        <div class="flex flex-col gap-4 pt-6 border-t-2 border-base-300">
-          <span class="text-sm font-bold tracking-[0.08em] text-km-gris-700">04</span>
+        <div class="flex flex-col gap-4 pt-6 border-t-2 border-base-300 transition-colors duration-500" data-step-item>
+          <span class="text-sm font-bold tracking-[0.08em] text-km-gris-700 transition-colors duration-500" data-step-number>04</span>
           <h3 class="text-lg lg:text-xl font-semibold leading-snug">Vérification en production</h3>
           <p class="text-sm lg:text-base text-km-gris-700 text-pretty">Le nouveau réglage est validé sur plusieurs cycles réels avant clôture de l'intervention.</p>
         </div>
@@ -194,15 +194,15 @@
     <section class="border-b border-base-300 px-6 py-12 lg:px-[120px] lg:py-16 flex flex-col gap-8">
       <h2 class="text-xl lg:text-2xl font-semibold tracking-tight">Nos autres pôles d'activité</h2>
       <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-        <a href="./pole-maintenance-depannage.html" class="flex items-center justify-between gap-4 border border-base-300 rounded p-5 hover:border-primary hover:bg-km-violet-050 transition-colors">
+        <a href="./pole-maintenance-depannage.html" class="flex items-center justify-between gap-4 border border-base-300 rounded p-5 hover:border-primary hover:bg-km-violet-050 hover:no-underline transition-colors">
           <span class="font-semibold">Maintenance et dépannage</span>
           <span class="text-secondary flex-none" aria-hidden="true">→</span>
         </a>
-        <a href="./pole-formation.html" class="flex items-center justify-between gap-4 border border-base-300 rounded p-5 hover:border-primary hover:bg-km-violet-050 transition-colors">
+        <a href="./pole-formation.html" class="flex items-center justify-between gap-4 border border-base-300 rounded p-5 hover:border-primary hover:bg-km-violet-050 hover:no-underline transition-colors">
           <span class="font-semibold">Formation sur mesure</span>
           <span class="text-secondary flex-none" aria-hidden="true">→</span>
         </a>
-        <a href="./pole-integration.html" class="flex items-center justify-between gap-4 border border-base-300 rounded p-5 hover:border-primary hover:bg-km-violet-050 transition-colors">
+        <a href="./pole-integration.html" class="flex items-center justify-between gap-4 border border-base-300 rounded p-5 hover:border-primary hover:bg-km-violet-050 hover:no-underline transition-colors">
           <span class="font-semibold">Intégration de A à Z</span>
           <span class="text-secondary flex-none" aria-hidden="true">→</span>
         </a>
@@ -227,7 +227,7 @@
   <footer class="bg-neutral text-neutral-content px-6 py-10 lg:px-[120px] lg:pt-16 lg:pb-12 flex flex-col gap-12 border-t border-km-gris-700">
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
       <div class="flex flex-col gap-4">
-        <div class="flex items-center gap-3">
+        <div class="flex items-center gap-3 hover:no-underline">
           <span class="w-6 h-6 bg-primary"></span>
           <span class="text-base font-bold tracking-tight">KAMEAMECHA</span>
         </div>
@@ -264,5 +264,7 @@
     <div class="border-t border-km-gris-700 pt-6 text-xs text-km-gris-400">© 2026 Kameamecha</div>
   </footer>
 
+
+  <script src="./js/method-steps.js"></script>
 </body>
 </html>

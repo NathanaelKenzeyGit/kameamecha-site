@@ -67,6 +67,14 @@
   html {
     font-feature-settings: "tnum" 1;
   }
+
+  a:not(.btn) {
+    text-decoration: none;
+  }
+  a:not(.btn):hover {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
 }
 
 @keyframes km-marquee {
