@@ -1,0 +1,16 @@
+{
+  "name": "kameamecha-site",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Site vitrine Kameamecha — Tailwind CSS + daisyUI",
+  "scripts": {
+    "build": "tailwindcss -i ./src/input.css -o ./dist/output.css --minify",
+    "build:css": "tailwindcss -i ./src/input.css -o ./dist/output.css --minify",
+    "watch:css": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.1.0",
+    "tailwindcss": "^4.1.0",
+    "daisyui": "^5.0.0"
+  }
+}

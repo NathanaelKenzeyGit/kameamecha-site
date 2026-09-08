@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="fr" data-theme="kameamecha" class="font-sans">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Formation sur mesure — Kameamecha</title>
+  <meta name="description" content="Formations Universal Robots dans vos locaux, sur vos robots et vos programmes : prise en main, programmation, maintenance de premier niveau, sécurité applicative." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./dist/output.css" />
+</head>
+<body class="bg-base-100 text-base-content">
+
+  <header class="navbar bg-base-100 border-b border-base-300 px-6 lg:px-[120px] h-16 lg:h-[88px] sticky top-0 z-50">
+    <div class="navbar-start">
+      <a href="./index.html" class="flex items-center gap-3">
+        <span class="block w-6 h-6 lg:w-8 lg:h-8 bg-primary" aria-hidden="true"></span>
+        <span class="text-base lg:text-xl font-bold tracking-tight">KAMEAMECHA</span>
+      </a>
+    </div>
+    <nav class="navbar-center hidden lg:flex">
+      <ul class="flex items-center gap-8 text-base font-medium">
+        <li><a href="./index.html#services" class="pb-1 border-b-2 border-primary text-base-content">Nos services</a></li>
+        <li><a href="#" class="pb-1 border-b-2 border-transparent text-km-gris-700 hover:text-base-content">Notre approche</a></li>
+        <li><a href="#" class="pb-1 border-b-2 border-transparent text-km-gris-700 hover:text-base-content">Formation</a></li>
+        <li><a href="#" class="pb-1 border-b-2 border-transparent text-km-gris-700 hover:text-base-content">Ressources</a></li>
+        <li><a href="./index.html#contact" class="pb-1 border-b-2 border-transparent text-km-gris-700 hover:text-base-content">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="navbar-end gap-2">
+      <a href="#" class="btn btn-outline border-base-content text-base-content hover:bg-base-content hover:text-base-100 hidden sm:inline-flex h-11 lg:h-12">Espace client</a>
+      <label for="mobile-menu" class="btn btn-square btn-outline border-base-content lg:hidden h-11 w-11" aria-label="Ouvrir le menu">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </label>
+    </div>
+  </header>
+
+  <input type="checkbox" id="mobile-menu" class="peer hidden" />
+  <div class="hidden peer-checked:flex lg:!hidden fixed inset-0 z-40 bg-base-100 flex-col pt-16">
+    <nav class="flex flex-col gap-1 p-5">
+      <a href="./index.html#services" class="py-3 text-lg font-medium border-b border-base-300">Nos services</a>
+      <a href="#" class="py-3 text-lg font-medium border-b border-base-300 text-km-gris-700">Notre approche</a>
+      <a href="#" class="py-3 text-lg font-medium border-b border-base-300 text-km-gris-700">Formation</a>
+      <a href="#" class="py-3 text-lg font-medium border-b border-base-300 text-km-gris-700">Ressources</a>
+      <a href="./index.html#contact" class="py-3 text-lg font-medium border-b border-base-300 text-km-gris-700">Contact</a>
+      <a href="#" class="btn btn-outline border-base-content mt-5 h-12">Espace client</a>
+    </nav>
+  </div>
+
+  <main>
+
+    <nav aria-label="Fil d'ariane" class="border-b border-base-300 px-6 py-4 lg:px-[120px] lg:py-6 flex items-center gap-3 text-sm text-km-gris-700">
+      <a href="./index.html" class="hover:text-base-content">Accueil</a>
+      <span class="text-km-gris-400" aria-hidden="true">/</span>
+      <a href="./index.html#services" class="hover:text-base-content">Nos services</a>
+      <span class="text-km-gris-400" aria-hidden="true">/</span>
+      <span class="text-base-content font-semibold">Formation sur mesure</span>
+    </nav>
+
+    <section class="border-b border-base-300 px-6 py-10 lg:px-[120px] lg:py-20">
+      <div class="lg:grid lg:grid-cols-12 lg:gap-6 lg:items-center">
+        <div class="lg:col-span-6 flex flex-col gap-6 lg:gap-8">
+          <span class="text-xs font-semibold tracking-[0.12em] uppercase text-secondary">Pôle d'activité 3 sur 4</span>
+          <h1 class="text-[32px] leading-[1.1] lg:text-[56px] font-semibold tracking-tight lg:leading-[1.05] text-balance">Formation sur mesure</h1>
+          <p class="text-base lg:text-lg leading-relaxed text-km-gris-700 max-w-[52ch] text-pretty">
+            Sessions organisées dans vos locaux, sur vos robots et vos programmes réels. Le contenu s'adapte au niveau des participants, du premier contact avec un cobot à la programmation avancée.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-3 sm:gap-4">
+            <a href="./index.html#contact" class="btn btn-primary h-13 lg:h-14 px-6 lg:px-8 text-base font-semibold">Demander un programme</a>
+            <a href="#prestations" class="btn btn-outline border-base-content h-13 lg:h-14 px-6 lg:px-8 text-base font-semibold">Voir nos formations</a>
+          </div>
+        </div>
+        <div class="lg:col-span-6 mt-8 lg:mt-0">
+          <div class="placeholder-img h-[248px] lg:h-[420px] flex items-end p-4 lg:p-6">
+            <span class="text-xs font-medium text-km-gris-700 leading-relaxed">Image 4:3 — session de formation en atelier, opérateur au pupitre UR accompagné d'un formateur</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="prestations" class="border-b border-base-300 bg-base-200 px-6 py-12 lg:px-[120px] lg:py-20 flex flex-col gap-10 lg:gap-12">
+      <div class="flex flex-col gap-4 max-w-[56ch]">
+        <h2 class="text-2xl lg:text-[36px] font-semibold tracking-tight">Nos modules</h2>
+        <p class="text-base lg:text-lg text-km-gris-700 text-pretty">Six modules, du premier contact avec un cobot à la programmation avancée.</p>
+      </div>
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-x-16 gap-y-0">
+        <div class="flex flex-col gap-4 py-6 lg:py-8 border-t border-base-300">
+          <h3 class="text-lg lg:text-xl font-semibold leading-snug">Prise en main d'un cobot UR</h3>
+          <p class="text-sm lg:text-base text-km-gris-700 text-pretty">Manipulation, mode manuel, notions de sécurité de base. Destinée aux opérateurs qui utilisent le robot au quotidien sans le programmer.</p>
+        </div>
+        <div class="flex flex-col gap-4 py-6 lg:py-8 border-t border-base-300">
+          <h3 class="text-lg lg:text-xl font-semibold leading-snug">Programmation de base</h3>
+          <p class="text-sm lg:text-base text-km-gris-700 text-pretty">Création et modification de programmes simples sur le pupitre, sans prérequis en programmation.</p>
+        </div>
+        <div class="flex flex-col gap-4 py-6 lg:py-8 border-t border-base-300">
+          <h3 class="text-lg lg:text-xl font-semibold leading-snug">Programmation avancée</h3>
+          <p class="text-sm lg:text-base text-km-gris-700 text-pretty">Variables, boucles, communication avec des équipements tiers. Destinée aux utilisateurs déjà formés à la base.</p>
+        </div>
+        <div class="flex flex-col gap-4 py-6 lg:py-8 border-t border-base-300">
+          <h3 class="text-lg lg:text-xl font-semibold leading-snug">Maintenance de premier niveau</h3>
+          <p class="text-sm lg:text-base text-km-gris-700 text-pretty">Gestes de vérification courants et procédure d'alerte, pour réduire le nombre d'interventions à distance ou sur site.</p>
+        </div>
+        <div class="flex flex-col gap-4 py-6 lg:py-8 border-t border-base-300 lg:border-b">
+          <h3 class="text-lg lg:text-xl font-semibold leading-snug">Sécurité applicative</h3>
+          <p class="text-sm lg:text-base text-km-gris-700 text-pretty">Rappel des principes de sécurité propres à une cellule robotisée, à destination des opérateurs et de l'encadrement.</p>
+        </div>
+        <div class="flex flex-col gap-4 py-6 lg:py-8 border-t border-base-300 border-b">
+          <h3 class="text-lg lg:text-xl font-semibold leading-snug">Formation sur mesure</h3>
+          <p class="text-sm lg:text-base text-km-gris-700 text-pretty">Contenu construit à partir de votre application et de vos programmes, quand les modules standards ne correspondent pas au besoin.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="border-b border-base-300 px-6 py-12 lg:px-[120px] lg:py-20 flex flex-col gap-10 lg:gap-12">
+      <div class="flex flex-col gap-4 max-w-[56ch]">
+        <h2 class="text-2xl lg:text-[36px] font-semibold tracking-tight">Comment se déroule une formation</h2>
+        <p class="text-base lg:text-lg text-km-gris-700 text-pretty">Quatre étapes, de votre demande à l'attestation remise aux participants.</p>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="flex flex-col gap-4 pt-6 border-t-2 border-primary">
+          <span class="text-sm font-bold tracking-[0.08em] text-secondary">01</span>
+          <h3 class="text-lg lg:text-xl font-semibold leading-snug">Vous décrivez le besoin</h3>
+          <p class="text-sm lg:text-base text-km-gris-700 text-pretty">Niveau des participants, application concernée, objectif de la formation.</p>
+        </div>
+        <div class="flex flex-col gap-4 pt-6 border-t-2 border-base-300">
+          <span class="text-sm font-bold tracking-[0.08em] text-km-gris-700">02</span>
+          <h3 class="text-lg lg:text-xl font-semibold leading-snug">Nous proposons un programme</h3>
+          <p class="text-sm lg:text-base text-km-gris-700 text-pretty">Un déroulé et une durée sont proposés à partir des modules existants, ajustés si nécessaire.</p>
+        </div>
+        <div class="flex flex-col gap-4 pt-6 border-t-2 border-base-300">
+          <span class="text-sm font-bold tracking-[0.08em] text-km-gris-700">03</span>
+          <h3 class="text-lg lg:text-xl font-semibold leading-snug">Session dans vos locaux</h3>
+          <p class="text-sm lg:text-base text-km-gris-700 text-pretty">Formation sur vos robots et vos programmes, en conditions réelles.</p>
+        </div>
+        <div class="flex flex-col gap-4 pt-6 border-t-2 border-base-300">
+          <span class="text-sm font-bold tracking-[0.08em] text-km-gris-700">04</span>
+          <h3 class="text-lg lg:text-xl font-semibold leading-snug">Attestation de formation</h3>
+          <p class="text-sm lg:text-base text-km-gris-700 text-pretty">Un document récapitulant le contenu suivi est remis à chaque participant.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="border-b border-base-300 bg-base-200 px-6 py-12 lg:px-[120px] lg:py-20">
+      <div class="lg:grid lg:grid-cols-12 lg:gap-6">
+        <div class="lg:col-span-4">
+          <h2 class="text-2xl lg:text-[36px] font-semibold tracking-tight text-balance">Questions fréquentes</h2>
+        </div>
+        <div class="lg:col-span-8 flex flex-col mt-6 lg:mt-0">
+          <details open class="group border-t border-km-gris-400 py-5 lg:py-6">
+            <summary class="flex items-baseline justify-between gap-6 cursor-pointer list-none">
+              <span class="text-base lg:text-xl font-semibold leading-snug">Faut-il un niveau préalable pour la prise en main d'un cobot ?</span>
+              <span class="text-xl lg:text-2xl text-secondary leading-none flex-none group-open:hidden">+</span>
+              <span class="text-xl lg:text-2xl text-secondary leading-none flex-none hidden group-open:inline">−</span>
+            </summary>
+            <p class="mt-4 text-sm lg:text-base text-km-gris-700 max-w-[64ch] text-pretty">Non, ce module ne demande aucun prérequis technique.</p>
+          </details>
+          <details class="group border-t border-base-300 py-5 lg:py-6">
+            <summary class="flex items-baseline justify-between gap-6 cursor-pointer list-none">
+              <span class="text-base lg:text-xl font-semibold leading-snug">Les sessions ont-elles lieu chez vous ou chez nous ?</span>
+              <span class="text-xl lg:text-2xl text-secondary leading-none flex-none group-open:hidden">+</span>
+              <span class="text-xl lg:text-2xl text-secondary leading-none flex-none hidden group-open:inline">−</span>
+            </summary>
+            <p class="mt-4 text-sm lg:text-base text-km-gris-700 max-w-[64ch] text-pretty">Dans vos locaux, sur vos robots, pour que la formation corresponde à votre installation réelle.</p>
+          </details>
+          <details class="group border-t border-base-300 py-5 lg:py-6">
+            <summary class="flex items-baseline justify-between gap-6 cursor-pointer list-none">
+              <span class="text-base lg:text-xl font-semibold leading-snug">Combien de personnes par session ?</span>
+              <span class="text-xl lg:text-2xl text-secondary leading-none flex-none group-open:hidden">+</span>
+              <span class="text-xl lg:text-2xl text-secondary leading-none flex-none hidden group-open:inline">−</span>
+            </summary>
+            <p class="mt-4 text-sm lg:text-base text-km-gris-700 max-w-[64ch] text-pretty">Le nombre de participants se discute selon le module et la disponibilité de la cellule pendant la formation.</p>
+          </details>
+          <details class="group border-t border-base-300 py-5 lg:py-6">
+            <summary class="flex items-baseline justify-between gap-6 cursor-pointer list-none">
+              <span class="text-base lg:text-xl font-semibold leading-snug">Une attestation est-elle délivrée ?</span>
+              <span class="text-xl lg:text-2xl text-secondary leading-none flex-none group-open:hidden">+</span>
+              <span class="text-xl lg:text-2xl text-secondary leading-none flex-none hidden group-open:inline">−</span>
+            </summary>
+            <p class="mt-4 text-sm lg:text-base text-km-gris-700 max-w-[64ch] text-pretty">Oui, un document récapitulant le contenu suivi est remis à chaque participant à l'issue de la session.</p>
+          </details>
+          <details class="group border-t border-base-300 border-b py-5 lg:py-6">
+            <summary class="flex items-baseline justify-between gap-6 cursor-pointer list-none">
+              <span class="text-base lg:text-xl font-semibold leading-snug">Peut-on former des opérateurs sur un robot que vous n'avez pas installé ?</span>
+              <span class="text-xl lg:text-2xl text-secondary leading-none flex-none group-open:hidden">+</span>
+              <span class="text-xl lg:text-2xl text-secondary leading-none flex-none hidden group-open:inline">−</span>
+            </summary>
+            <p class="mt-4 text-sm lg:text-base text-km-gris-700 max-w-[64ch] text-pretty">Oui, la formation porte sur le robot présent chez vous, quel que soit l'installateur d'origine.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="border-b border-base-300 px-6 py-12 lg:px-[120px] lg:py-16 flex flex-col gap-8">
+      <h2 class="text-xl lg:text-2xl font-semibold tracking-tight">Nos autres pôles d'activité</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+        <a href="./pole-maintenance-depannage.html" class="flex items-center justify-between gap-4 border border-base-300 rounded p-5 hover:border-primary hover:bg-km-violet-050 transition-colors">
+          <span class="font-semibold">Maintenance et dépannage</span>
+          <span class="text-secondary flex-none" aria-hidden="true">→</span>
+        </a>
+        <a href="./pole-optimisation-assistance.html" class="flex items-center justify-between gap-4 border border-base-300 rounded p-5 hover:border-primary hover:bg-km-violet-050 transition-colors">
+          <span class="font-semibold">Optimisation et assistance technique</span>
+          <span class="text-secondary flex-none" aria-hidden="true">→</span>
+        </a>
+        <a href="./pole-integration.html" class="flex items-center justify-between gap-4 border border-base-300 rounded p-5 hover:border-primary hover:bg-km-violet-050 transition-colors">
+          <span class="font-semibold">Intégration de A à Z</span>
+          <span class="text-secondary flex-none" aria-hidden="true">→</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="bg-neutral text-neutral-content px-6 py-12 lg:px-[120px] lg:py-20">
+      <div class="lg:grid lg:grid-cols-12 lg:gap-6 lg:items-center">
+        <div class="lg:col-span-7 flex flex-col gap-4">
+          <h2 class="text-2xl lg:text-[36px] font-semibold tracking-tight leading-tight text-balance">Une équipe à monter en compétence sur vos cobots ?</h2>
+          <p class="text-base lg:text-lg text-base-300 max-w-[52ch] text-pretty">Décrivez votre besoin, nous vous revenons avec un programme adapté.</p>
+        </div>
+        <div class="lg:col-span-5 flex flex-col sm:flex-row lg:justify-end gap-4 mt-8 lg:mt-0">
+          <a href="./index.html#contact" class="btn btn-primary h-13 lg:h-14 px-6 lg:px-8 text-base font-semibold">Demander un programme</a>
+          <a href="#" class="btn btn-outline border-neutral-content text-neutral-content hover:bg-neutral-content hover:text-neutral h-13 lg:h-14 px-6 lg:px-8 text-base font-semibold">Nous appeler</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="bg-neutral text-neutral-content px-6 py-10 lg:px-[120px] lg:pt-16 lg:pb-12 flex flex-col gap-12 border-t border-km-gris-700">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+      <div class="flex flex-col gap-4">
+        <div class="flex items-center gap-3">
+          <span class="w-6 h-6 bg-primary"></span>
+          <span class="text-base font-bold tracking-tight">KAMEAMECHA</span>
+        </div>
+        <p class="text-sm text-base-300 text-pretty">Service et intégration sur robots Universal Robots, partout en France.</p>
+      </div>
+      <div class="flex flex-col gap-4">
+        <span class="text-xs font-semibold tracking-[0.12em] uppercase text-km-gris-400">Coordonnées</span>
+        <ul class="flex flex-col gap-2 text-sm text-neutral-content">
+          <li>Adresse du siège — à fournir</li>
+          <li>Téléphone — à fournir</li>
+          <li>contact@kameamecha.fr</li>
+          <li>Du lundi au vendredi, 8 h – 18 h</li>
+        </ul>
+      </div>
+      <div class="flex flex-col gap-4">
+        <span class="text-xs font-semibold tracking-[0.12em] uppercase text-km-gris-400">Plan du site</span>
+        <ul class="flex flex-col gap-2 text-sm text-neutral-content">
+          <li><a href="./index.html#services" class="hover:underline">Nos services</a></li>
+          <li>Notre approche</li>
+          <li>Formation</li>
+          <li>Ressources techniques</li>
+          <li>Espace client</li>
+        </ul>
+      </div>
+      <div class="flex flex-col gap-4">
+        <span class="text-xs font-semibold tracking-[0.12em] uppercase text-km-gris-400">Informations légales</span>
+        <ul class="flex flex-col gap-2 text-sm text-neutral-content">
+          <li>Mentions légales</li>
+          <li>Politique de confidentialité</li>
+          <li>Gestion des cookies</li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-km-gris-700 pt-6 text-xs text-km-gris-400">© 2026 Kameamecha</div>
+  </footer>
+
+</body>
+</html>
